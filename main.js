@@ -25,10 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	// const currentTime = `${hours}:${minutes}:${seconds}`;
 
 	// Get current UTC time in milliseconds
-
 	const currentTime = Date.now();
 
 	// Update the elements
-	dayElement.textContent = `Current Day: ${dayOfWeek}`;
-	timeElement.textContent = `Current UTC Time: ${currentTime}`;
+	dayElement.textContent = `${dayOfWeek}`;
+	timeElement.textContent = `${currentTime}`;
 });
