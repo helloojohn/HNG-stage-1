@@ -18,11 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	const today = new Date();
 	const dayOfWeek = daysOfWeek[today.getUTCDay()];
 
-	// Get current UTC time
-	const hours = today.getUTCHours().toString().padStart(2, "0");
-	const minutes = today.getUTCMinutes().toString().padStart(2, "0");
-	const seconds = today.getUTCSeconds().toString().padStart(2, "0");
-	const currentTime = `${hours}:${minutes}:${seconds}`;
+	/* Get current UTC time */
+	// const hours = today.getUTCHours().toString().padStart(2, "0");
+	// const minutes = today.getUTCMinutes().toString().padStart(2, "0");
+	// const seconds = today.getUTCSeconds().toString().padStart(2, "0");
+	// const currentTime = `${hours}:${minutes}:${seconds}`;
+
+	// Get current UTC time in milliseconds
+
+	const currentTime = Date.now();
 
 	// Update the elements
 	dayElement.textContent = `Current Day: ${dayOfWeek}`;
