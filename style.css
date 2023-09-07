@@ -1,14 +1,15 @@
 body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    margin: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .container {
     text-align: center;
-    margin: auto;
     background-color: #231E39;
     border-radius: 30px;
     box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
